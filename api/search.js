@@ -202,3 +202,16 @@ function heuristicParse(prompt) {
     extra_instructions: prompt
   };
 }
+{
+  "name": "buscador-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "cors": "^2.8.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

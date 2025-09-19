@@ -3,6 +3,14 @@
 // - Recibe POST { prompt, locale }
 // - (Opcional) Usa OPENAI_API_KEY para parsear el prompt y extraer criterios (mejor interpretación).
 // - Busca en MercadoLibre (sitio MLA por defecto) y devuelve resultados ordenados.
+import express from 'express';
+import cors from 'cors';
+
+const app = express();
+app.use(cors()); // <---- Esto permite conexiones desde cualquier web
+app.use(express.json());
+
+// tu código de rutas aquí...
 
 export default async function handler(req, res) {
   // CORS (permite llamadas desde CodePen / tu frontend)
